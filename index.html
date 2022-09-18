@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a <span>random password<span></h1>
+        <h2>Never use an insecure password again.</h2>
+        <form name="main">
+            <div>
+                <input type="tel" id="num-amount" name="amountInput" placeholder="Number amount">
+            </div>
+            <div>
+                <input class="checkbox" checked type="checkbox" name="bigLetters" id="big-letters">  
+                <label for="big-letters">Big letters</label>
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox" checked name="otherSymbols" id="other-symbols">  
+                <label for="other-symbols">Other symbols</label>
+            </div>
+        </form>
+        <button id="genbtn">Generate passwords</button>
+        <div class="line"></div>
+        <div class="passwords">
+            <div class="passwords__item" id="password1">Password 1</div>
+            <div class="passwords__item" id="password2">Password 2</div>
+        </div>        
+        <script src="index.js"></script>
+    </body>
+</html>
